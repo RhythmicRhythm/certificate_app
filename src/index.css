@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-y: scroll;
+    overflow: visible;
+}
+
+@font-face {
+  font-family: 'Nature Beauty Personal Use Regular';
+  font-style: normal;
+  font-weight: normal;
+  src:url("./assets/fonts/Nature Beauty Personal Use.woff"), local('Nature Beauty Personal Use Regular'), url('Nature Beauty Personal Use.woff') format('woff');
+  }
+
+  .conference{
+    font-family: Nature Beauty Personal Use Regular;
+  }
+
+  

@@ -1,0 +1,15 @@
+.gradientContainer {
+  background: linear-gradient(
+    90.31deg,
+    #187040 0.2%,
+    rgba(16, 77, 59, 0.66) 34.57%,
+    rgba(8, 40, 53, 0.67) 81.55%,
+    #062134 99.66%
+  );
+}
+
+.containerBg {
+  background: url(../../assets/images/certBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
