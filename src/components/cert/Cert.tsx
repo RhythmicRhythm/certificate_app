@@ -48,15 +48,7 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
         className="w-[12%] print:width-[16%] absolute bottom-[110px] print:bottom-[90px] right-[140px] print:right-[180px]"
         alt=""
       />
-            {/* <img
-        src={president}
-        className="w-[16%] absolute bottom-[160px] print:bottom-[120px] left-[190px] print:left-[190px]"
-        alt=""
-      />
-      <img
-        src={secetary}
-        className="w-[9%] absolute bottom-[180px] print:bottom-[180px] right-[390px] print:right-[390px]"
-        alt=""
+       
       /> */}
     </div>
   );
