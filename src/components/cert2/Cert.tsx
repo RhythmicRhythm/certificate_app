@@ -44,7 +44,7 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
         className="w-[10%] absolute bottom-[220px] print:bottom-[220px] right-[90px] print:right-[90px]"
         alt=""
       />
-      <img
+      {/* <img
         src={president}
         className="w-[16%] absolute bottom-[120px] print:bottom-[120px] left-[190px] print:left-[190px]"
         alt=""
@@ -53,7 +53,7 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
         src={secetary}
         className="w-[12%] absolute bottom-[140px] print:bottom-[140px] right-[190px] print:right-[190px]"
         alt=""
-      />
+      /> */}
     </div>
   );
 };
