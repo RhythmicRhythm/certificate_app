@@ -2,6 +2,8 @@ import QRCode from "qrcode";
 import React from "react";
 import cert from "../../assets/images/cert.png";
 import certp from "../../assets/images/Napps_pay_2.jpeg";
+import president from "../../assets/images/Napps_National_President.png";
+import secetary from "../../assets/images/Napps_National_Secetary.png";
 import { usersInfo } from "../../types";
 import { log } from "console";
 
@@ -38,12 +40,22 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
       </div>
       <div className="absolute print:z-20 left-[590.5px] print:left-[750.5px] h-[40px] w-[60%] mt-[510.5px]">
       <p className="font-[600] text-xl print:xl text-[#343233]">
-            1st August 2023
+            2nd August 2023
           </p>
       </div>
       <img
         src={qr}
-        className="w-[16%] print:width-[16%] absolute bottom-[90px] print:bottom-[90px] right-[120px] print:right-[120px]"
+        className="w-[12%] print:width-[16%] absolute bottom-[110px] print:bottom-[90px] right-[140px] print:right-[180px]"
+        alt=""
+      />
+            <img
+        src={president}
+        className="w-[16%] absolute bottom-[160px] print:bottom-[120px] left-[190px] print:left-[190px]"
+        alt=""
+      />
+      <img
+        src={secetary}
+        className="w-[9%] absolute bottom-[180px] print:bottom-[180px] right-[390px] print:right-[390px]"
         alt=""
       />
     </div>

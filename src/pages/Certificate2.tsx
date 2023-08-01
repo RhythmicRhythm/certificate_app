@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ReactToPrint from "react-to-print";
-import Certs from "../components/cert/Certs";
+import Certs from "../components/cert2/Certs";
 import { IFetchSucess } from "../types";
 import { useNavigate } from "react-router-dom";
 import loader from "../assets/images/loader.gif";
@@ -69,10 +69,10 @@ const Certificate = () => {
   return (
     <React.Fragment>
       <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/certificates")}
         className="ml-5 transition-all duration-[.5s] mt-5 bg-black text-white hover:bg-green-500 sm:p-5 p-3 text-[.8rem] sm:text-[1rem] rounded lg:fixed left-0 mb-5 top-0 hidden lg:block "
       >
-        Back to Certificate 1
+        Certificate 2
       </button>
       {/* for mobile display */}
       <div className="h-screen bg-white flex justify-center items-center text-[1rem] md:text-[2rem] text-center lg:hidden fixed z-20 uppercase font-medium px-[20px]">
