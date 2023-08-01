@@ -48,8 +48,7 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
         className="w-[12%] print:width-[16%] absolute bottom-[110px] print:bottom-[90px] right-[140px] print:right-[180px]"
         alt=""
       />
-       
-      /> */}
+
     </div>
   );
 };
