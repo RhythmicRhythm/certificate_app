@@ -27,25 +27,25 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
       <img className="mx-auto w-[100%] h-[992px]" src={certp} alt="cert" />
       
         {userData && (
-        <div className=" absolute print:z-20 left-[390.5px] print:left-[390px] h-[40px] w-[60%] mt-[270px]">
+        <div className=" absolute print:z-20 left-[390.5px] print:left-[390px] h-[40px] w-[60%] mt-[340px]">
           <p className="font-[600] text-4xl print:3xl text-[#343233]">
             {userData?.name.first.toUpperCase()} {userData?.name.last.toUpperCase()}
           </p>
         </div>
       )}
-            <div className="absolute print:z-20 left-[300.5px] print:left-[420.5px] h-[40px] w-[60%] mt-[350.5px]">
+            <div className="absolute print:z-20 left-[390.5px] print:left-[430.5px] h-[40px] w-[60%] mt-[440.5px]">
       <p className="font-[600] italic text-xl print:xl text-[#343233]">
            20 Thousand Naira
           </p>
       </div>
-      <div className="absolute print:z-20 left-[590.5px] print:left-[750.5px] h-[40px] w-[60%] mt-[510.5px]">
+      <div className="absolute print:z-20 left-[770.5px] print:left-[750.5px] h-[40px] w-[60%] mt-[650px]">
       <p className="font-[600] text-xl print:xl text-[#343233]">
             2nd August 2023
           </p>
       </div>
       <img
         src={qr}
-        className="w-[12%] print:width-[16%] absolute bottom-[110px] print:bottom-[90px] right-[140px] print:right-[180px]"
+        className="w-[12%] print:width-[16%] absolute bottom-[120px] print:bottom-[120px] right-[180px] print:right-[180px]"
         alt=""
       />
 
