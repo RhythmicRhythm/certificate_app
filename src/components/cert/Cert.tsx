@@ -24,7 +24,7 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
 
   return (
     <div className=" relative w-full h-full  flex print:w-full ">
-      <img className="mx-auto w-[100%] h-[792px]" src={certp} alt="cert" />
+      <img className="mx-auto w-[100%] h-[992px]" src={certp} alt="cert" />
       
         {userData && (
         <div className=" absolute print:z-20 left-[390.5px] print:left-[390px] h-[40px] w-[60%] mt-[270px]">

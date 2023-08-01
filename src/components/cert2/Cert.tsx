@@ -23,10 +23,10 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
 
   return (
     <div className=" relative w-full h-full  flex print:w-full ">
-      <img className="mx-auto w-[100%] h-[792px]" src={certp} alt="cert" />
+      <img className="mx-auto w-[100%] h-[875px]" src={certp} alt="cert" />
 
       {userData && (
-        <div className=" absolute print:z-20 left-[420px] print:left-[520px] h-[40px] w-[60%] mt-[285px]">
+        <div className=" absolute print:z-20 left-[460px] print:left-[500px] h-[40px] w-[60%] mt-[320px]">
           <p className="font-[600] text-3xl print:3xl text-[#343233]">
             {userData?.name.first.toUpperCase()}{" "}
             {userData?.name.last.toUpperCase()}
@@ -34,7 +34,7 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
         </div>
       )}
 
-      <div className="absolute print:z-20 left-[510.5px] print:left-[570.5px] h-[40px] w-[60%] mt-[520.5px]">
+      <div className="absolute print:z-20 left-[570.5px] print:left-[570.5px] h-[40px] w-[60%] mt-[570.5px]">
         <p className="font-[600] text-base print:xl text-[#343233]">
           1st August 2023
         </p>
