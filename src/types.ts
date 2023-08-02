@@ -1,9 +1,10 @@
 export interface usersInfo {
-  title?: string;
+  title: string;
+  paid_at: string;
   firstname: string;
   name: {
-    first: string;
-    last: string;
+    firstname: string;
+    lastname: string;
   };
   picture: {
     large: string;
@@ -12,11 +13,11 @@ export interface usersInfo {
 }
 
 export interface usersInfo {
-  title?: string;
+  title: string;
   firstname: string;
   name: {
-    first: string;
-    last: string;
+    firstname: string;
+    lastname: string;
   };
   lastname: string;
   passport?: string;

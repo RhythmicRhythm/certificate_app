@@ -3,9 +3,10 @@ import React from "react";
 import cert from "../../assets/images/cert.png";
 import president from "../../assets/images/Napps_National_President.png";
 import secetary from "../../assets/images/Napps_National_Secetary.png";
-import certp from "../../assets/images/Napps_pay_1.jpeg";
+import certp from "../../assets/images/Napps_pay_1.jpg";
 import { usersInfo } from "../../types";
 import { log } from "console";
+import { format } from "date-fns"; 
 
 const Cert = ({ userData }: { userData: usersInfo | null }) => {
   const [qr, setQr] = React.useState<string>("");
@@ -28,15 +29,17 @@ const Cert = ({ userData }: { userData: usersInfo | null }) => {
       {userData && (
         <div className=" absolute print:z-20 left-[460px] print:left-[500px] h-[40px] w-[60%] mt-[320px]">
           <p className="font-[600] text-3xl print:3xl text-[#343233]">
-            {userData?.name.first.toUpperCase()}{" "}
-            {userData?.name.last.toUpperCase()}
+            {userData?.title.toUpperCase()} {userData?.firstname.toUpperCase()}{" "}
+            {userData?.lastname.toUpperCase()}
           </p>
         </div>
       )}
 
       <div className="absolute print:z-20 left-[570.5px] print:left-[570.5px] h-[40px] w-[60%] mt-[570.5px]">
         <p className="font-[600] text-base print:xl text-[#343233]">
-          1st August 2023
+        {userData && userData.paid_at
+            ? format(new Date(userData.paid_at), "MMMM d, yyyy")
+            : ""}
         </p>
       </div>
       <img

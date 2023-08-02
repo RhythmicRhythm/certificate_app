@@ -27,7 +27,7 @@ const Certificate = () => {
       const fetchedUsers = await fetchData();
       console.log(fetchedUsers);
       try {
-        setUsersData(fetchedUsers.results);
+        setUsersData(fetchedUsers);
         setStoreCert(document.getElementsByClassName("IDCARD"));
 
         setLoading(false);
