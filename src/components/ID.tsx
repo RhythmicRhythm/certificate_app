@@ -28,7 +28,7 @@ const ID = ({ userData }: { userData: usersInfo | null }) => {
         </div>
         <div className=" absolute print:z-80 left-[130.5px] print:left-[130.5px] h-[30px] w-[90%] mt-[105px]">
           <p className="font-[600] text-base print:3xl text-[#343233]">
-            {userData?.name.first.toUpperCase()} {userData?.name.last.toUpperCase()}
+            {userData?.name.firstname.toUpperCase()} {userData?.name.lastname.toUpperCase()}
           </p>
         </div>
 
