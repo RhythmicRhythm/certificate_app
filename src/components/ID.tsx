@@ -24,6 +24,7 @@ const ID = ({ userData }: { userData: usersInfo | null }) => {
     <div className=" relative rounded-lg h-[320px] pt-5">
       <div className="flex justify-between h-full">
         <div className="max-w-[100%] relative">
+          {/* work */}
         <img className="w-[100%] h-[100%]" src={certp} alt="cert" />
         </div>
         <div className=" absolute print:z-80 left-[130.5px] print:left-[130.5px] h-[30px] w-[90%] mt-[105px]">
